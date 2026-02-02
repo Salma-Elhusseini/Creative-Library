@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Creaive Library</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c88c89023a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Library Logo" width="150" />
+      </div>
+      <div class="humburger">
+        <i class="fa-solid fa-bars active" style="color: #321b03"></i>
+        <i class="fa-solid fa-xmark" style="color: #321b03"></i>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="btns-right">
+        <button id="sign-up">
+          <i class="fa-solid fa-user-lock"></i> sign up
+        </button>
+        <button id="login-in"><i class="fa-solid fa-user"></i> Login in</button>
+      </div>
+    </header>
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+    <!--card .sign up-->
+    <div class="sign-up hidden">
+      <span class="close-btn">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+    <!--card .login in-->
+    <div class="login-in hidden">
+      <span class="close-btn">&times;</span>
+      <h2>Login In</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login In</button>
+      </form>
+    </div>
+    <main>
+      <section class="contact-section">
+        <h1><i class="fa-solid fa-envelope"></i> Contact Us</h1>
+        <p>
+          We would love to hear from you! Whether you have questions about our
+          book collection, need assistance, or want to provide feedback, feel
+          free to reach out to us.
+        </p>
+        <form id="contact-form">
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" id="submit">Send Message</button>
+        </form>
+        <p id="success-message" class="hidden">Message Sent Successfully!</p>
+        <div class="social-media">
+          <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="Instgram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_info">
+        <div class="location">
+          <h4>Our Location</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 123 Book St, Literature
+            City, 45678
+          </p>
+          <p><i class="fa-solid fa-phone"></i> 01110292833</p>
+          <a href="mailto:info@creative-library.com"
+            ><i class="fa-solid fa-at"></i> Our Email</a
+          >
+        </div>
+        <div class="links">
+          <h4>Follow Us</h4>
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook"></i> Facebook</a
+          >
+          <a href="Instgram.com"
+            ><i class="fa-brands fa-instagram"></i> Instgram</a
+          >
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+        <div class="legal">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates.</p>
+          <input type="email" name="Email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>&copy; 2024 The Creative Library. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

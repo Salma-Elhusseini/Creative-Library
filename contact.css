@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact-section {
+  width: 100%;
+  height: auto;
+  padding: 150px 30px;
+  background-color: var(--beig);
+  color: var(--brown);
+  text-align: center;
+}
+.contact-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.contact-section p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: var(--brown) 2px solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-section form .field {
+  text-align: start;
+  font-size: 1rem;
+}
+.contact-section form input,
+.contact-section form textarea {
+  padding: 5px;
+  border: 1px solid var(--brown);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  margin-top: 5px;
+}
+.contact-section form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cafe);
+  color: var(--brown);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contact-section form button:hover {
+  background-color: var(--brown);
+  color: var(--beig);
+}
+.contact-section #success-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  color: rgb(85, 130, 100);
+}
+.hidden {
+  display: none;
+}
+.social-media {
+  padding: 30px 40px 0 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.social-media a {
+  font-size: 1.5rem;
+  color: var(--brown);
+  margin-right: 15px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--cafe);
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.social-media a:hover {
+  background-color: var(--brown);
+  color: var(--beig);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

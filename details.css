@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.book-details {
+  background-color: var(--beig);
+  width: 100%;
+  height: 100vh;
+  padding: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: start;
+  gap: 30px;
+}
+.book-details img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.book-details .img-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.det-book {
+  background-color: var(--cafe);
+  width: 860px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.book-details h1 {
+  font-size: 2.5rem;
+  color: var(--brown);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Alegreya", serif;
+}
+.book-details h3 {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: var(--wood);
+  font-family: "Dancing Script", cursive;
+}
+.book-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--brown);
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.book-details button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brown);
+  color: var(--beig);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.book-details button:hover {
+  background-color: var(--beig);
+  color: var(--brown);
+  border: 1px solid var(--brown);
+}

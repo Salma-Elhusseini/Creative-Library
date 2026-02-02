@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-section {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 30px;
+  text-align: start;
+  background-color: var(--cafe);
+  color: var(--brown);
+  display: flex;
+}
+.about-section h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.about-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--brown);
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.about-section p:last-child {
+  font-size: 17px;
+  color: var(--wood);
+  font-family: "Dancing Script", cursive;
+}
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 20px;
+    height: auto;
+  }
+  .about-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .about-section p {
+    font-size: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-section .img {
+    display: none;
+  }
+}
+.team-section {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 30px;
+  background-color: var(--beig-light);
+  color: var(--brown);
+}
+.team-section h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+.team-section .team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.team-section .member {
+  background-color: var(--cafe);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+.team-section .member h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.team-section .member p {
+  font-size: 1rem;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--brown);
+}
+@media (max-width: 900px) {
+  .team-section {
+    height: auto;
+  }
+}
+.mission-section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--beig);
+  color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mission-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.mission-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--wood);
+  padding: 0 20px;
+}

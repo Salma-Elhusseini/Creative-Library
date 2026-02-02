@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(images/background.jpg);
+  background-size: cover;
+  padding-top: 80px;
+}
+.page1 button {
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.4 ease-in;
+}
+.page1 button i {
+  color: var(--beig-light);
+}
+.page1 button i:hover {
+  color: var(--beig);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 85%;
+}
+.content h1 {
+  font-size: 4rem;
+  color: var(--beig);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.content p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+.content button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--beig-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--brown);
+}
+.content button:hover {
+  transform: scale(1.05);
+  background-color: var(--wood);
+  border: none;
+  color: var(--beig);
+}
+@media (max-width: 900px) {
+  .page1 {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 120px;
+  }
+}
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--beig);
+  text-align: center;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.page2 h2 {
+  font-size: 3rem;
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.page2 p {
+  font-size: 1.2rem;
+  color: var(--wood);
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page2 button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brown-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--beig);
+}
+.page2 button:hover {
+  transform: scale(1.05);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 900px) {
+  .page2 {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 120px;
+  }
+}
+.page3 {
+  height: 100vh;
+  width: 100%;
+  padding-top: 25px;
+  background-color: var(--cafe);
+  text-align: center;
+}
+.page3 h2 {
+  font-size: 3rem;
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+.page3 .book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.page3 .book-list .book-item {
+  border: var(--brown) solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+}
+.page3 button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brown-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--beig);
+}
+.page3 button:hover {
+  transform: scale(1.05);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 900px) {
+  .page3 {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+.page4 {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--beig);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+.page4 h2 {
+  font-size: 3rem;
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.page4 span {
+  font-size: 1rem;
+  color: var(--wood);
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+.page4 .location {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 0 40px;
+}
+.page4 .location .frame {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.page4 .location .loc-info {
+  max-width: 400px;
+  text-align: start;
+}
+.page4 .location .loc-info p {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: var(--wood);
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.page4 .location .loc-info p a {
+  text-decoration: none;
+  color: var(--wood);
+  font-size: 1.3rem;
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.3 ease-in-out;
+}
+.page4 .location .loc-info p a:hover {
+  text-decoration: underline;
+}
+.page4 button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brown-light);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--beig);
+}
+.page4 button:hover {
+  transform: scale(1.05);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.page4 .social-media {
+  padding: 30px 40px 0 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.page4 .social-media a {
+  font-size: 1.5rem;
+  color: var(--brown);
+  margin-right: 15px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--cafe);
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.page4 .social-media a:hover {
+  background-color: var(--brown);
+  color: var(--beig);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

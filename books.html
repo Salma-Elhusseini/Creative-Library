@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Creaive Library</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="books.css" />
+    <script
+      src="https://kit.fontawesome.com/c88c89023a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Library Logo" width="150" />
+      </div>
+      <div class="humburger">
+        <i class="fa-solid fa-bars active" style="color: #321b03"></i>
+        <i class="fa-solid fa-xmark" style="color: #321b03"></i>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="btns-right">
+        <button id="sign-up">
+          <i class="fa-solid fa-user-lock"></i> sign up
+        </button>
+        <button id="login-in"><i class="fa-solid fa-user"></i> Login in</button>
+      </div>
+    </header>
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+    <!--card .sign up-->
+    <div class="sign-up hidden">
+      <span class="close-btn">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+    <!--card .login in-->
+    <div class="login-in hidden">
+      <span class="close-btn">&times;</span>
+      <h2>Login In</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login In</button>
+      </form>
+    </div>
+    <main>
+      <section class="books-section">
+        <h1><i class="fa-solid fa-book-open"></i> Our Book Collection</h1>
+        <div class="books-grid">
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/1984.jpg"
+              alt="1984 Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">1984</h2>
+            <p id="author">by George Orwell</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/1984.jpg"
+              data-title="1984"
+              data-author="George Orwell"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/To_Kill_a_Mockingbird.jpg"
+              alt="To Kill a Mockingbird Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">To Kill a Mockingbird</h2>
+            <p id="author">by Harper Lee</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/To_Kill_a_Mockingbird.jpg"
+              data-title="To Kill a Mockingbird"
+              data-author="Harper Lee"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/The_Great_Gatsby.jpg"
+              alt="The Great Gatsby Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">The Great Gatsby</h2>
+            <p id="author">by F. Scott Fitzgerald</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/The_Great_Gatsby.jpg"
+              data-title="The Great Gatsby"
+              data-author="F. Scott Fitzgerald"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/The_lord.jpeg"
+              alt="the lord of the rings Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">The Lord of the Rings</h2>
+            <p id="author">by J.R.R. Tolkien</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/The_lord.jpeg"
+              data-title="The Lord of the Rings"
+              data-author="J.R.R. Tolkien"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/great_expectation.jpg"
+              alt="great expectations Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Great Expectations</h2>
+            <p id="author">by Charles Dickens</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/great_expectation.jpg"
+              data-title="Great Expectations"
+              data-author="Charles Dickens"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/sharlock_holmes.jpg"
+              alt="sharlock holmes Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Sharlock Holmes</h2>
+            <p id="author">by Arthur Conan Doyle</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/sharlock_holmes.jpg"
+              data-title="Sharlock Holmes"
+              data-author="Arthur Conan Doyle"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/Atomic_Habits.jpg"
+              alt="atomic habits Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Atomic Habits</h2>
+            <p id="author">by James Clear</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/Atomic_Habits.jpg"
+              data-title="Atomic Habits"
+              data-author="James Clear"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/The_Alchemist.jpg"
+              alt="alchemist Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">The Alchemist</h2>
+            <p id="author">by Paulo Coelho</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/The_Alchemist.jpg"
+              data-title="The Alchemist"
+              data-author="Paulo Coelho"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/romeo_juliet.jpg"
+              alt="romeo and juliet Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Romeo and Juliet</h2>
+            <p id="author">by William Shakespeare</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/romeo_juliet.jpg"
+              data-title="Romeo and Juliet"
+              data-author="William Shakespeare"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/harry_potter.jpg"
+              alt="harry potter Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Harry Potter</h2>
+            <p id="author">by J.K. Rowling</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/harry_potter.jpg"
+              data-title="Harry Potter"
+              data-author="J.K. Rowling"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/A_Study_in_Scarlet.jpg"
+              alt="a study in scarlet Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">A Study in Scarlet</h2>
+            <p id="author">by Arthur Conan Doyle</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/A_Study_in_Scarlet.jpg"
+              data-title="A Study in Scarlet"
+              data-author="Arthur Conan Doyle"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/Jane_Eyre.jpg"
+              alt="jane eyre Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Jane Eyre</h2>
+            <p id="author">by Charlotte Bronte</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/Jane_Eyre.jpg"
+              data-title="Jane Eyre"
+              data-author="Charlotte Bronte"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/Shirley.jpg"
+              alt="shirley Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Shirley</h2>
+            <p id="author">by Charlotte Bronte</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/Shirley.jpg"
+              data-title="Shirley"
+              data-author="Charlotte Bronte"
+            >
+              Show Details
+            </button>
+          </div>
+          <div class="book-card">
+            <img
+              id="image"
+              src="images/Wuthering_Heights.jpg"
+              alt="wuthering heights Book"
+              width="200"
+              height="300"
+            />
+            <h2 id="name-book">Wuthering Heights</h2>
+            <p id="author">by Emily Bronte</p>
+            <button
+              type="button"
+              id="details-btn"
+              data-img="images/Wuthering_Heights.jpg"
+              data-title="Wuthering Heights"
+              data-author="Emily Bronte"
+            >
+              Show Details
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="quotes-section">
+        <h2>Inspirational Quotes</h2>
+        <div class="blockquote">
+          <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+          <blockquote class="quote1">
+            "A room without books is like a body without a soul." <br />
+            <span> By Marcus Tullius Cicero </span>
+          </blockquote>
+          <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_info">
+        <div class="location">
+          <h4>Our Location</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 123 Book St, Literature
+            City, 45678
+          </p>
+          <p><i class="fa-solid fa-phone"></i> 01110292833</p>
+          <a href="mailto:info@creative-library.com"
+            ><i class="fa-solid fa-at"></i> Our Email</a
+          >
+        </div>
+        <div class="links">
+          <h4>Follow Us</h4>
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook"></i> Facebook</a
+          >
+          <a href="Instgram.com"
+            ><i class="fa-brands fa-instagram"></i> Instgram</a
+          >
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+        <div class="legal">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates.</p>
+          <input type="email" name="Email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>&copy; 2024 The Creative Library. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

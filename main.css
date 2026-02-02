@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alumni+Sans+Pinstripe:ital@0;1&family=BBH+Bogle&family=Dancing+Script:wght@400..700&family=Funnel+Display:wght@300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --brown: #321b03;
+  --brown-light: #321b03ee;
+  --beig: #e6d8c3;
+  --beig-light: #e6d8c3b1;
+  --gray: rgb(209, 206, 206);
+  --wood: rgb(92, 64, 51);
+  --cafe: #bca88d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.header {
+  width: 96vw;
+  height: 70px;
+  background-color: var(--beig-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  color: var(--beig);
+  margin: 15px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1000000;
+  top: 15px;
+  border: 1px solid var(--brown);
+}
+.logo {
+  font-size: 25px;
+}
+.humburger {
+  display: none;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar ul li a {
+  display: inline-block;
+  color: var(--brown);
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.navbar ul li a:hover {
+  transform: scale(1.1);
+}
+header button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  color: var(--brown);
+  cursor: pointer;
+  transition: all 0.4 ease-out;
+}
+header button:hover {
+  background-color: var(--wood);
+  color: var(--beig);
+}
+
+@media (max-width: 900px) {
+  header .btns-right {
+    display: none;
+  }
+  .header {
+    padding: 0 3rem;
+    position: fixed;
+    width: 90vw;
+  }
+  .humburger {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+  }
+  .humburger i {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .humburger i.active {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  .navbar {
+    position: absolute;
+    background-color: var(--brown-light);
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 0 3rem;
+    display: none;
+    transition: 0.3s ease;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar ul {
+    display: block;
+  }
+  .navbar ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 10px;
+  }
+  .navbar ul li:nth-child(4) {
+    border: none;
+  }
+  .navbar ul li a {
+    margin: 0;
+    color: var(--beig);
+  }
+}
+footer {
+  width: 100%;
+  background-color: var(--brown);
+  color: var(--beig);
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+footer .footer_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+footer .footer_info div {
+  flex: 1;
+  margin: 0 10px;
+  width: 250px;
+  height: 200px;
+  text-align: start;
+}
+footer .footer_info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--cafe);
+}
+footer .footer_info p,
+footer .footer_info a {
+  font-size: 0.8rem;
+  color: var(--beig);
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+  width: auto;
+  transition: all 0.3 ease-out;
+}
+footer .footer_info a:hover {
+  text-decoration: underline;
+}
+footer .newsletter input[type="email"] {
+  padding: 5px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+footer .newsletter button {
+  padding: 6px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--beig-light);
+  color: var(--brown);
+  cursor: pointer;
+}
+
+footer hr {
+  border: 0.5px solid var(--beig);
+  margin: 0 20px;
+}
+.copyright {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+@media (max-width: 900px) {
+  footer .footer_info {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  footer .footer_info div {
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+  }
+  footer .newsletter input[type="email"] {
+    width: 50%;
+  }
+}
+.sign-up,
+.login-in {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  animation: pop 0.3s ease;
+}
+@keyframes pop {
+  from {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+.hidden {
+  display: none;
+}
+.sign-up .close-btn,
+.login-in .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 22px;
+}
+.sign-up h2,
+.login-in h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--brown);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+.sign-up form input,
+.login-in form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--brown);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.sign-up form button,
+.login-in form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--beig-light);
+  color: var(--brown);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.sign-up form button:hover,
+.login-in form button:hover {
+  background-color: var(--brown);
+  color: #fff;
+}
+.no-scroll {
+  overflow: hidden;
+}

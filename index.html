@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Creaive Library</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/c88c89023a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Library Logo" width="150" />
+      </div>
+      <div class="humburger">
+        <i class="fa-solid fa-bars active" style="color: #321b03"></i>
+        <i class="fa-solid fa-xmark" style="color: #321b03"></i>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="btns-right">
+        <button id="sign-up">
+          <i class="fa-solid fa-user-lock"></i> sign up
+        </button>
+        <button id="login-in"><i class="fa-solid fa-user"></i> Login in</button>
+      </div>
+    </header>
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+    <!--card .sign up-->
+    <div class="sign-up hidden">
+      <span class="close-btn">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+    <!--card .login in-->
+    <div class="login-in hidden">
+      <span class="close-btn">&times;</span>
+      <h2>Login In</h2>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login In</button>
+      </form>
+    </div>
+    <main>
+      <section class="page1">
+        <div class="content">
+          <h1>Welcome to The Creative Library</h1>
+          <p>Your gateway to a world of imagination and knowledge.</p>
+          <button id="know-more" onclick="window.location.href = 'books.html'">
+            Explore Books
+          </button>
+          <!--section page2-->
+        </div>
+        <button
+          onclick="
+            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
+          "
+        >
+          <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+      </section>
+      <section class="page2">
+        <img src="images/books.png" alt="Library" height="350" />
+        <div class="info">
+          <h2>About Us</h2>
+          <p>
+            At The Creative Library, we believe in the power of books to
+            inspire, educate, and entertain. Our mission is to provide a diverse
+            collection of literature that caters to all ages and interests.
+          </p>
+          <button id="about" onclick="window.location.href = 'about.html'">
+            Learn More
+          </button>
+          <!--about.html-->
+        </div>
+      </section>
+      <section class="page3">
+        <h2>Featured Books</h2>
+        <div class="book-list">
+          <div class="book-item">
+            <img
+              src="images/great_expectation.jpg"
+              alt="Great Expectations Book"
+              width="150"
+              height="230"
+            />
+            <h3>Great Expectations</h3>
+            <p>by Charles Dickens</p>
+          </div>
+          <div class="book-item">
+            <img
+              src="images/sharlock_holmes.jpg"
+              alt="Sherlock Holmes Book"
+              width="150"
+              height="230"
+            />
+            <h3>Sherlock Holmes</h3>
+            <p>by Arthur Conan Doyle</p>
+          </div>
+          <div class="book-item">
+            <img
+              src="images/The_lord.jpeg"
+              alt="The lord of the rings Book"
+              width="150"
+              height="230"
+            />
+            <h3>The lord of the rings</h3>
+            <p>by J.R.R. Tolkien</p>
+          </div>
+        </div>
+        <button id="books" onclick="window.location.href = 'books.html'">
+          View All Books
+        </button>
+        <!--books.html-->
+      </section>
+      <section class="page4">
+        <h2>Contact Us</h2>
+        <span>
+          Have questions or need assistance? Reach out to our friendly team at
+          The Creative Library.
+        </span>
+        <div class="location">
+          <div class="frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.4266243303723!2d29.90658377428867!3d31.20890776246644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c38a0562fe85%3A0xa34cc632ec23e7!2sAlexandria%20Bibliotheca!5e0!3m2!1sen!2seg!4v1766873658825!5m2!1sen!2seg"
+              width="400"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="loc-info">
+            <p>
+              <i class="fa-solid fa-location-dot"></i> 123 Book St, Literature
+              City, 45678
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 01110292833</p>
+            <p>
+              <i class="fa-solid fa-at"></i
+              ><a href="mailto:info@creative-library.com"> Our Email</a>
+            </p>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="Instgram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <button id="contact" onclick="window.location.href = 'contact.html'">
+          Contact Support
+        </button>
+        <!--contact.html-->
+      </section>
+    </main>
+    <footer>
+      <div class="footer_info">
+        <div class="location">
+          <h4>Our Location</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 123 Book St, Literature
+            City, 45678
+          </p>
+          <p><i class="fa-solid fa-phone"></i> 01110292833</p>
+          <a href="mailto:info@creative-library.com"
+            ><i class="fa-solid fa-at"></i> Our Email</a
+          >
+        </div>
+        <div class="links">
+          <h4>Follow Us</h4>
+          <a href="facebook.com"
+            ><i class="fa-brands fa-facebook"></i> Facebook</a
+          >
+          <a href="Instgram.com"
+            ><i class="fa-brands fa-instagram"></i> Instgram</a
+          >
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          <a href="linkedin.com"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+        <div class="legal">
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates.</p>
+          <input type="email" name="Email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>&copy; 2024 The Creative Library. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
