@@ -72,3 +72,13 @@
   color: var(--brown);
   border: 1px solid var(--brown);
 }
+@media screen and (max-width: 768px) {
+  .book-details {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .det-book {
+    width: 100%;
+  }
+}
