@@ -78,8 +78,12 @@
     align-items: center;
     height: auto;
   }
+  .book-details h1 {
+    font-size: 1.9rem;
+  }
   .det-book {
     width: 100%;
   }
 }
+
 
