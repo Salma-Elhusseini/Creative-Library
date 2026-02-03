@@ -72,7 +72,7 @@
   color: var(--brown);
   border: 1px solid var(--brown);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .book-details {
     flex-direction: column;
     align-items: center;
@@ -82,3 +82,4 @@
     width: 100%;
   }
 }
+
